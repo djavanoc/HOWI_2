@@ -84,7 +84,6 @@ int main()
 			case 0:
 				executa = false;
 				break;
-
 			default:
 				cout << "Digite um valor válido." << endl;
 				break;
