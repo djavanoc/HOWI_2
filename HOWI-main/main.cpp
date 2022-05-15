@@ -2,13 +2,12 @@
 //  main.cpp
 //  How1
 //
-//  Created by Thales Fernandes on 15/04/22.
+//  Created by Thales Fernandes & Djavan Camargo on 15/04/22.
 //
 
 #include <iostream>
 #include <locale.h>
 #include <stdlib.h>    //bibliotecas para funcionamento do código
-
 #include <math.h>
 using namespace std;
 
@@ -23,7 +22,7 @@ int main()
 	int binario;
 	while (executa) //enquanto executa
 	{
-	//escrevendo na tela este bloco
+        //escrevendo na tela este bloco
 		cout <<"********************* " << endl;
 		cout <<"CONVERSOR DE NÚMEROS"   << endl;
 		cout <<"********************* " << endl;
@@ -44,7 +43,7 @@ int main()
 				cout << endl; //quebra de linha
 				cin >> decimal;
 				cout << endl; //quebra de linha
-				cout << "O valor em decimal é:" << endl;
+				cout << "O valor em binario é:" << endl;
 				cout << endl; //quebra de linha
 				for (int i = 7; i >= 0; i--)
 				{
@@ -58,21 +57,20 @@ int main()
 					}
 					decimal = decimal / 2;
 				}
-				for (int i=0; i<8; i++) {
+				for (int i=0; i<8; i++)
+                    {
 					cout << bin[i];
-				}
+                    }
 				cout << endl; //quebra de linha
 				cout << endl; //quebra de linha
-
 				break;
-
 			case 2:
 				cout << endl; //quebra de linha
 				cout << "Digite o valor em binario: " << endl;
 				cout << endl; //quebra de linha
 				cin >> binario;
 				cout << endl; //quebra de linha
-				cout << "O valor em Binario é:" << endl;
+				cout << "O valor em Decimal é:" << endl;
 				cout << endl; //quebra de linha
                 for(int i = 0; binario > 0; i++)
                     {
@@ -80,23 +78,16 @@ int main()
                     binario = binario / 10;
                     }
                     cout << dec;
-                    return 0;
-    }
-
-
-
-
-				break;
-
+                    cout << endl; //quebra de linha
+                    cout << endl; //quebra de linha
+                    break;
 			case 0:
-
 				executa = false;
 				break;
 
 			default:
 				cout << "Digite um valor válido." << endl;
 				break;
-		}
-	}
-
+        }
+    }
 }
