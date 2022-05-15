@@ -8,7 +8,6 @@
 #include <iostream>
 #include <locale.h>
 #include <stdlib.h>    //bibliotecas para funcionamento do código
-
 #include <math.h>
 using namespace std;
 
@@ -68,11 +67,11 @@ int main()
 
 			case 2:
 				cout << endl; //quebra de linha
-				cout << "Digite o valor em binario: " << endl;
+				cout << "Digite o valor em Binário: " << endl;
 				cout << endl; //quebra de linha
 				cin >> binario;
 				cout << endl; //quebra de linha
-				cout << "O valor em Binario é:" << endl;
+				cout << "O valor em Binário é:" << endl;
 				cout << endl; //quebra de linha
                 for(int i = 0; binario > 0; i++)
                     {
